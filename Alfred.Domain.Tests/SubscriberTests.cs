@@ -3,6 +3,7 @@ using Xunit;
 using Alfred.Domain;
 using Alfred.Domain.Subscribers;
 using Alfred.Domain.ValueObjects;
+using Alfred.Domain.Accounts;
 
 namespace Alfred.Domain.Tests
 {
@@ -33,16 +34,7 @@ namespace Alfred.Domain.Tests
             Assert.Equal(subscriber.PhoneNumber, PhoneNumber);
         }
 
-        //BusinessRule: Every new subscriber should have an account created
-        [Fact]
-        public void NewSubscriber_Should_Have_New_Account_Upon_Creation()
-        {
-            //Arrange
-
-            //Act
-
-            //Assert
-        }
+        
 
         }
 
