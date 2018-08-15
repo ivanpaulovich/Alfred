@@ -5,8 +5,9 @@ using System.Text;
 namespace Alfred.Domain.Requests
 {
     //Every request should have a start time and state
-    internal interface IRequest
+    public interface IRequest
     {
+        Guid SubscriberId { get; }
 
         DateTime RequestStartTime { get; }
 

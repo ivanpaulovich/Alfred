@@ -10,17 +10,21 @@ namespace Alfred.Domain.Requests
     {
         //Here we set the start time and request state
 
-        protected Request()
+        protected Request(Guid subscriberID)
         {
+            
             Id = Guid.NewGuid();
             RequestStartTime = DateTime.Now;
             StateOfRequest = RequestState.Opened;
+            SubscriberId = subscriberID;
         }
         public DateTime RequestStartTime { get; private set; }
 
         public RequestState StateOfRequest { get; private set; }
 
         public Guid Id { get; private set; }
+
+        public Guid SubscriberId { get; private set; }
 
         protected void SetStateOfRequest(RequestState requestState)
         {

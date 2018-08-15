@@ -7,13 +7,9 @@ namespace Alfred.Domain.Requests.Reminders
     public class Reminder : Request
     {
   
-        public Guid SubscriberId { get; private set; }
-
-        
-        public Reminder(Guid subscriberID):base()
+        public Reminder(Guid subscriberID):base(subscriberID)
         {
        
-            SubscriberId = subscriberID;
         }
     }
 }
