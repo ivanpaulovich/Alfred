@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alfred.Application", "Alfre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alfred.Application.Tests", "Alfred.Application.Tests\Alfred.Application.Tests.csproj", "{9E09B5A9-FE7C-4DF2-B15F-13EB3D8F2FCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alfred.Infrastructure", "Alfred.Infrastructure\Alfred.Infrastructure.csproj", "{57E80AE4-5657-4F96-88F0-1CAB1EE53271}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9E09B5A9-FE7C-4DF2-B15F-13EB3D8F2FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E09B5A9-FE7C-4DF2-B15F-13EB3D8F2FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E09B5A9-FE7C-4DF2-B15F-13EB3D8F2FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57E80AE4-5657-4F96-88F0-1CAB1EE53271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E80AE4-5657-4F96-88F0-1CAB1EE53271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E80AE4-5657-4F96-88F0-1CAB1EE53271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E80AE4-5657-4F96-88F0-1CAB1EE53271}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

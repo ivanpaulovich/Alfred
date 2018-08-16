@@ -53,7 +53,7 @@ namespace Alfred.Domain.Tests
             subscriber = new Subscriber(name, PhoneNumber);
             account = new Account(subscriber.Id);
 
-            subscriber.AddAccount(account.Id);
+            subscriber.SetAccountId(account.Id);
 
             //Assert
             Assert.True(subscriber.AccountId != Guid.Empty);

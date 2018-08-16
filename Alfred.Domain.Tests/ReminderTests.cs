@@ -1,5 +1,6 @@
 ﻿using Alfred.Domain.Requests;
 using Alfred.Domain.Requests.Reminders;
+using Alfred.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -14,7 +15,7 @@ namespace Alfred.Domain.Tests
         {
             //Arrange
             Reminder reminder;
-            Guid subscriberId = Guid.NewGuid();
+            Id subscriberId = Guid.NewGuid();
 
             //Act
             reminder = new Reminder(subscriberId);

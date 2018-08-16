@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alfred.Domain.ValueObjects;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -22,9 +23,9 @@ namespace Alfred.Domain.Requests
 
         public RequestState StateOfRequest { get; private set; }
 
-        public Guid Id { get; private set; }
+        public Id Id { get; private set; }
 
-        public Guid SubscriberId { get; private set; }
+        public Id SubscriberId { get; private set; }
 
         protected void SetStateOfRequest(RequestState requestState)
         {
