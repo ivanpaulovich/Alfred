@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alfred.Domain.ValueObjects;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,6 +9,6 @@ namespace Alfred.Domain
     internal interface IEntity
     {
         //Every Entity must have an ID
-        Guid Id { get; }
+        Id Id { get; }
     }
 }

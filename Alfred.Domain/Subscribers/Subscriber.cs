@@ -7,11 +7,12 @@ namespace Alfred.Domain.Subscribers
 {
     //The subscriber is our aggregate root
     //No need for an ISubscriber interface since no other entity will be a subscriber
-    public class Subscriber : IAggregateRoot
+    public sealed class Subscriber : IAggregateRoot, ISubscriber
     {
-        public Guid Id { private set;  get; }
+        public Id Id { private set;  get; }
         public Name Name { private set; get; }
         public PhoneNumber PhoneNumber { private set; get; }
+        public Id AccountId { private set; get; }
 
         private Subscriber() { }
 
@@ -19,7 +20,12 @@ namespace Alfred.Domain.Subscribers
         {
             Id = Guid.NewGuid();
             Name = name;
-            PhoneNumber = phoneNumber;
+            PhoneNumber = phoneNumber;        
+        }
+
+        public void SetAccountId(Id accountId)
+        {
+            AccountId = accountId;
         }
     }
 }

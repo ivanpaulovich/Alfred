@@ -20,13 +20,16 @@ namespace Alfred.Domain.Tests
         public void Subscriber_Should_Have_Name_PhoneNumber_and_ID()
         {
             //Arrange
+            Account account;
             Subscriber subscriber;
             Guid subID = Guid.NewGuid();
             Name name = "Calvin";
             PhoneNumber PhoneNumber = "702-338-0362";
 
             //Act
+
             subscriber = new Subscriber(name, PhoneNumber);
+            account = new Account(subscriber.Id);
 
             //Assert
             Assert.True(subscriber.Id != Guid.Empty);
@@ -34,9 +37,29 @@ namespace Alfred.Domain.Tests
             Assert.Equal(subscriber.PhoneNumber, PhoneNumber);
         }
 
-        
+        //BusinessRule: Every Subscriber should have a name, phone number, and ID
+        [Fact]
+        public void Subscriber_should_have_account_added_upon_creation()
+        {
+            //Arrange
+            Account account;
+            Subscriber subscriber;
+            Guid subID = Guid.NewGuid();
+            Name name = "Calvin";
+            PhoneNumber PhoneNumber = "702-338-0362";
+
+            //Act
+
+            subscriber = new Subscriber(name, PhoneNumber);
+            account = new Account(subscriber.Id);
+
+            subscriber.AddAccount(account.Id);
+
+            //Assert
+            Assert.True(subscriber.AccountId != Guid.Empty);
 
         }
 
-    
+
+        }
 }

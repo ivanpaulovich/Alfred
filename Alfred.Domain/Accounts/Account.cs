@@ -1,16 +1,17 @@
-﻿using System;
+﻿using Alfred.Domain.ValueObjects;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Alfred.Domain.Accounts
 {
-    public sealed class Account : IAggregateRoot
+    public sealed class Account : IAggregateRoot, IAccount
     {
-        public Guid Id { get; private set; }
-        public Guid SubscriberId { get; private set; }
+        public Id Id { get; private set; }
+        public Id SubscriberId { get; private set; }
         public bool IsAccountEnabled { get; private set; }
 
-        public Account(Guid subscriberID)
+        public Account(Id subscriberID)
         {
             Id = Guid.NewGuid();
             SubscriberId = subscriberID;
