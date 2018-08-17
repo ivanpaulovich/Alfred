@@ -9,21 +9,20 @@ using System.Threading.Tasks;
 namespace Alfred.Application.UseCases.RegisterSubscriber
 {
     //Sealed the class
-    public sealed class RegisterSubscriber : IRegisterSubscriber
+    public sealed class RegisterSubscriberAppService : IRegisterSubscriberAppService
     {
         private readonly ISubscriberWriteOnlyRepository _subscriberWriteOnlyRepository;
-        private readonly IAccountWriteOnlyRepository _accountWriteOnlyRepository;
+        //private readonly IAccountWriteOnlyRepository _accountWriteOnlyRepository;
 
         //Dependency Injection will inject these classes
-        public RegisterSubscriber(
-            ISubscriberWriteOnlyRepository subscriberWriteOnlyRepository,
-            IAccountWriteOnlyRepository accountWriteOnlyRepository)
+        public RegisterSubscriberAppService(
+            ISubscriberWriteOnlyRepository subscriberWriteOnlyRepository)//,IAccountWriteOnlyRepository accountWriteOnlyRepository)
         {
             _subscriberWriteOnlyRepository = subscriberWriteOnlyRepository;
-            _accountWriteOnlyRepository = accountWriteOnlyRepository;
+            //_accountWriteOnlyRepository = accountWriteOnlyRepository;
         }
 
-        //QUESTION: Should I require value objects here? 
+        //QUESTION: Should I require value objects here for name and phone number? 
         public async Task Register(string name, string phoneNumber)
         {
             if (string.IsNullOrEmpty(name))

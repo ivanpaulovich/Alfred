@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace Alfred.Application.UseCases.RegisterSubscriber
 {
     //We need an interface so we can utilize dependency injection
-    public interface IRegisterSubscriber
+    public interface IRegisterSubscriberAppService
     {
          Task Register(string name, string phoneNumber);
     }
