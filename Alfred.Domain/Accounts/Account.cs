@@ -6,6 +6,7 @@ using System.Text;
 
 namespace Alfred.Domain.Accounts
 {
+    //An Aggregate is a transactional consistency boundary
     public sealed class Account : IAggregateRoot, IAccount
     {
         public Id Id { get; private set; }
@@ -36,18 +37,14 @@ namespace Alfred.Domain.Accounts
             // Add to a list of services
         }
 
-        public void AddReminder(
-            string serviceName,
-            TimeSpan timeSpan)
+        public void Subscribe()
         {
-            // Look up on the list of services
-            // to find serviceName
+            throw new NotImplementedException();
+        }
 
-            //
-            // Add reminder
-            Reminder reminder = new Reminder(minutesToDelay, serviceName);
-
-            IsAccountEnabled = false;
+        public void AddReminder()
+        {
+            throw new NotImplementedException();
         }
     }
 }

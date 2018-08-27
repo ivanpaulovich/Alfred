@@ -7,7 +7,7 @@ namespace Alfred.Domain.Requests
 {
     //Im wrapping list functionality in this class to simplify usage
     //This class is sealed so it cant be inherited
-    public sealed class RequestCollection<TRequesType> where TRequesType : Request
+    public sealed class RequestCollection<TRequesType> where TRequesType : IRequest
     {
         private readonly IList<TRequesType> _requests;
 
