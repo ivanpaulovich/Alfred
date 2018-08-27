@@ -14,7 +14,7 @@ using ValidateRequestExample.Filters;
 namespace Alfred.WebApi.UseCases.Register
 {
     [Route("api/subscribe")]
-    [ApiController]
+    [Controller]
     public class RegisterSubscribersController : Controller
     {
         public class TwilioMessagingRequest
@@ -32,7 +32,7 @@ namespace Alfred.WebApi.UseCases.Register
 
         // GET api/subscriber
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public IEnumerable<string> Get()
         {
             return new string[] { "sub1", "sub2" };
         }

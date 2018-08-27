@@ -3,17 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alfred.Domain", "Alfred.Domain\Alfred.Domain.csproj", "{583A2B0E-32BE-4C9A-A779-C278327D73AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alfred.Domain", "Alfred.Domain\Alfred.Domain.csproj", "{583A2B0E-32BE-4C9A-A779-C278327D73AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alfred.Domain.Tests", "Alfred.Domain.Tests\Alfred.Domain.Tests.csproj", "{E823751D-F7EB-4F18-938B-592DE8A7F876}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alfred.Application", "Alfred.Application\Alfred.Application.csproj", "{7F9B6C1D-D950-4DA1-B672-1DB93B88A1D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alfred.Application", "Alfred.Application\Alfred.Application.csproj", "{7F9B6C1D-D950-4DA1-B672-1DB93B88A1D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alfred.Application.Tests", "Alfred.Application.Tests\Alfred.Application.Tests.csproj", "{9E09B5A9-FE7C-4DF2-B15F-13EB3D8F2FCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alfred.Application.Tests", "Alfred.Application.Tests\Alfred.Application.Tests.csproj", "{9E09B5A9-FE7C-4DF2-B15F-13EB3D8F2FCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alfred.Infrastructure", "Alfred.Infrastructure\Alfred.Infrastructure.csproj", "{57E80AE4-5657-4F96-88F0-1CAB1EE53271}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alfred.Infrastructure", "Alfred.Infrastructure\Alfred.Infrastructure.csproj", "{57E80AE4-5657-4F96-88F0-1CAB1EE53271}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alfred.WebApi", "Alfred.WebApi\Alfred.WebApi.csproj", "{4523E245-6719-4459-AA8B-E9D105A42849}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alfred.WebApi", "Alfred.WebApi\Alfred.WebApi.csproj", "{4523E245-6719-4459-AA8B-E9D105A42849}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +23,6 @@ Global
 		{583A2B0E-32BE-4C9A-A779-C278327D73AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{583A2B0E-32BE-4C9A-A779-C278327D73AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{583A2B0E-32BE-4C9A-A779-C278327D73AE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E823751D-F7EB-4F18-938B-592DE8A7F876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E823751D-F7EB-4F18-938B-592DE8A7F876}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E823751D-F7EB-4F18-938B-592DE8A7F876}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E823751D-F7EB-4F18-938B-592DE8A7F876}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7F9B6C1D-D950-4DA1-B672-1DB93B88A1D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7F9B6C1D-D950-4DA1-B672-1DB93B88A1D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F9B6C1D-D950-4DA1-B672-1DB93B88A1D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
